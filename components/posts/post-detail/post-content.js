@@ -1,8 +1,7 @@
-import reactMarkdown from "react-markdown";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 import PostHeader from "./post-header";
 import styles from "./post-content.module.css";
-import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 const DUMMY_POSTS = {
   slug: "getting-started-with-nextjs",
