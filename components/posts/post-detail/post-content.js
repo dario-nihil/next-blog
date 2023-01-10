@@ -1,5 +1,8 @@
-import styles from "./post-content.module.css";
+import reactMarkdown from "react-markdown";
+
 import PostHeader from "./post-header";
+import styles from "./post-content.module.css";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 const DUMMY_POSTS = {
   slug: "getting-started-with-nextjs",
@@ -15,7 +18,7 @@ const PostContent = () => {
   return (
     <article className={styles.content}>
       <PostHeader title={DUMMY_POSTS.title} image={imagePath} />
-      {DUMMY_POSTS.content}
+      <ReactMarkdown>{DUMMY_POSTS.content}</ReactMarkdown>
     </article>
   );
 };
