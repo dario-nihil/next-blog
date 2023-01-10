@@ -12,7 +12,6 @@ export const getStaticProps = () => {
     props: {
       posts: allPosts,
     },
-    revalidate: 1800,
   };
 };
 
